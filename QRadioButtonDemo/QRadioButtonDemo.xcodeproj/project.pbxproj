@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C74B04B1797A5110031D064 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C74B04A1797A5110031D064 /* UIKit.framework */; };
+		2C74B04D1797A5110031D064 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C74B04C1797A5110031D064 /* Foundation.framework */; };
+		2C74B04F1797A5110031D064 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C74B04E1797A5110031D064 /* CoreGraphics.framework */; };
+		2C74B0551797A5110031D064 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0531797A5110031D064 /* InfoPlist.strings */; };
+		2C74B0571797A5110031D064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C74B0561797A5110031D064 /* main.m */; };
+		2C74B05B1797A5110031D064 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C74B05A1797A5110031D064 /* QAppDelegate.m */; };
+		2C74B05D1797A5110031D064 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B05C1797A5110031D064 /* Default.png */; };
+		2C74B05F1797A5110031D064 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B05E1797A5110031D064 /* Default@2x.png */; };
+		2C74B0611797A5110031D064 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0601797A5110031D064 /* Default-568h@2x.png */; };
+		2C74B0641797A5110031D064 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C74B0631797A5110031D064 /* QViewController.m */; };
+		2C74B0671797A5110031D064 /* QViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0651797A5110031D064 /* QViewController.xib */; };
+		2C74B0721797A6510031D064 /* radio_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B06E1797A6510031D064 /* radio_selected.png */; };
+		2C74B0731797A6510031D064 /* radio_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B06F1797A6510031D064 /* radio_selected@2x.png */; };
+		2C74B0741797A6510031D064 /* radio_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0701797A6510031D064 /* radio_unselected.png */; };
+		2C74B0751797A6510031D064 /* radio_unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0711797A6510031D064 /* radio_unselected@2x.png */; };
+		2C74B07D1797A65B0031D064 /* QRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C74B0781797A65B0031D064 /* QRadioButton.m */; };
+		2C74B07E1797A65B0031D064 /* radio_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B0791797A65B0031D064 /* radio_checked.png */; };
+		2C74B07F1797A65B0031D064 /* radio_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B07A1797A65B0031D064 /* radio_checked@2x.png */; };
+		2C74B0801797A65B0031D064 /* radio_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B07B1797A65B0031D064 /* radio_unchecked.png */; };
+		2C74B0811797A65B0031D064 /* radio_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C74B07C1797A65B0031D064 /* radio_unchecked@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C74B0471797A5110031D064 /* QRadioButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRadioButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C74B04A1797A5110031D064 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C74B04C1797A5110031D064 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C74B04E1797A5110031D064 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C74B0521797A5110031D064 /* QRadioButtonDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QRadioButtonDemo-Info.plist"; sourceTree = "<group>"; };
+		2C74B0541797A5110031D064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C74B0561797A5110031D064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C74B0581797A5110031D064 /* QRadioButtonDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRadioButtonDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2C74B0591797A5110031D064 /* QAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
+		2C74B05A1797A5110031D064 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
+		2C74B05C1797A5110031D064 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2C74B05E1797A5110031D064 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2C74B0601797A5110031D064 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2C74B0621797A5110031D064 /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
+		2C74B0631797A5110031D064 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+		2C74B0661797A5110031D064 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QViewController.xib; sourceTree = "<group>"; };
+		2C74B06E1797A6510031D064 /* radio_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_selected.png; sourceTree = "<group>"; };
+		2C74B06F1797A6510031D064 /* radio_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_selected@2x.png"; sourceTree = "<group>"; };
+		2C74B0701797A6510031D064 /* radio_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_unselected.png; sourceTree = "<group>"; };
+		2C74B0711797A6510031D064 /* radio_unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_unselected@2x.png"; sourceTree = "<group>"; };
+		2C74B0771797A65B0031D064 /* QRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRadioButton.h; sourceTree = "<group>"; };
+		2C74B0781797A65B0031D064 /* QRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRadioButton.m; sourceTree = "<group>"; };
+		2C74B0791797A65B0031D064 /* radio_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_checked.png; sourceTree = "<group>"; };
+		2C74B07A1797A65B0031D064 /* radio_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_checked@2x.png"; sourceTree = "<group>"; };
+		2C74B07B1797A65B0031D064 /* radio_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_unchecked.png; sourceTree = "<group>"; };
+		2C74B07C1797A65B0031D064 /* radio_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio_unchecked@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C74B0441797A5110031D064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C74B04B1797A5110031D064 /* UIKit.framework in Frameworks */,
+				2C74B04D1797A5110031D064 /* Foundation.framework in Frameworks */,
+				2C74B04F1797A5110031D064 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C74B03E1797A5110031D064 = {
+			isa = PBXGroup;
+			children = (
+				2C74B0501797A5110031D064 /* QRadioButtonDemo */,
+				2C74B0491797A5110031D064 /* Frameworks */,
+				2C74B0481797A5110031D064 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C74B0481797A5110031D064 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B0471797A5110031D064 /* QRadioButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C74B0491797A5110031D064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B04A1797A5110031D064 /* UIKit.framework */,
+				2C74B04C1797A5110031D064 /* Foundation.framework */,
+				2C74B04E1797A5110031D064 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C74B0501797A5110031D064 /* QRadioButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B0761797A65B0031D064 /* QRadioButton */,
+				2C74B0591797A5110031D064 /* QAppDelegate.h */,
+				2C74B05A1797A5110031D064 /* QAppDelegate.m */,
+				2C74B0621797A5110031D064 /* QViewController.h */,
+				2C74B0631797A5110031D064 /* QViewController.m */,
+				2C74B0651797A5110031D064 /* QViewController.xib */,
+				2C74B0511797A5110031D064 /* Supporting Files */,
+			);
+			path = QRadioButtonDemo;
+			sourceTree = "<group>";
+		};
+		2C74B0511797A5110031D064 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B06D1797A6510031D064 /* images */,
+				2C74B0521797A5110031D064 /* QRadioButtonDemo-Info.plist */,
+				2C74B0531797A5110031D064 /* InfoPlist.strings */,
+				2C74B0561797A5110031D064 /* main.m */,
+				2C74B0581797A5110031D064 /* QRadioButtonDemo-Prefix.pch */,
+				2C74B05C1797A5110031D064 /* Default.png */,
+				2C74B05E1797A5110031D064 /* Default@2x.png */,
+				2C74B0601797A5110031D064 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C74B06D1797A6510031D064 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B06E1797A6510031D064 /* radio_selected.png */,
+				2C74B06F1797A6510031D064 /* radio_selected@2x.png */,
+				2C74B0701797A6510031D064 /* radio_unselected.png */,
+				2C74B0711797A6510031D064 /* radio_unselected@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		2C74B0761797A65B0031D064 /* QRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C74B0771797A65B0031D064 /* QRadioButton.h */,
+				2C74B0781797A65B0031D064 /* QRadioButton.m */,
+				2C74B0791797A65B0031D064 /* radio_checked.png */,
+				2C74B07A1797A65B0031D064 /* radio_checked@2x.png */,
+				2C74B07B1797A65B0031D064 /* radio_unchecked.png */,
+				2C74B07C1797A65B0031D064 /* radio_unchecked@2x.png */,
+			);
+			path = QRadioButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C74B0461797A5110031D064 /* QRadioButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C74B06A1797A5110031D064 /* Build configuration list for PBXNativeTarget "QRadioButtonDemo" */;
+			buildPhases = (
+				2C74B0431797A5110031D064 /* Sources */,
+				2C74B0441797A5110031D064 /* Frameworks */,
+				2C74B0451797A5110031D064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRadioButtonDemo;
+			productName = QRadioButtonDemo;
+			productReference = 2C74B0471797A5110031D064 /* QRadioButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C74B03F1797A5110031D064 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Q;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = ivan;
+			};
+			buildConfigurationList = 2C74B0421797A5110031D064 /* Build configuration list for PBXProject "QRadioButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C74B03E1797A5110031D064;
+			productRefGroup = 2C74B0481797A5110031D064 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C74B0461797A5110031D064 /* QRadioButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C74B0451797A5110031D064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C74B0551797A5110031D064 /* InfoPlist.strings in Resources */,
+				2C74B05D1797A5110031D064 /* Default.png in Resources */,
+				2C74B05F1797A5110031D064 /* Default@2x.png in Resources */,
+				2C74B0611797A5110031D064 /* Default-568h@2x.png in Resources */,
+				2C74B0671797A5110031D064 /* QViewController.xib in Resources */,
+				2C74B0721797A6510031D064 /* radio_selected.png in Resources */,
+				2C74B0731797A6510031D064 /* radio_selected@2x.png in Resources */,
+				2C74B0741797A6510031D064 /* radio_unselected.png in Resources */,
+				2C74B0751797A6510031D064 /* radio_unselected@2x.png in Resources */,
+				2C74B07E1797A65B0031D064 /* radio_checked.png in Resources */,
+				2C74B07F1797A65B0031D064 /* radio_checked@2x.png in Resources */,
+				2C74B0801797A65B0031D064 /* radio_unchecked.png in Resources */,
+				2C74B0811797A65B0031D064 /* radio_unchecked@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C74B0431797A5110031D064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C74B0571797A5110031D064 /* main.m in Sources */,
+				2C74B05B1797A5110031D064 /* QAppDelegate.m in Sources */,
+				2C74B0641797A5110031D064 /* QViewController.m in Sources */,
+				2C74B07D1797A65B0031D064 /* QRadioButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C74B0531797A5110031D064 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C74B0541797A5110031D064 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C74B0651797A5110031D064 /* QViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C74B0661797A5110031D064 /* en */,
+			);
+			name = QViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C74B0681797A5110031D064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C74B0691797A5110031D064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C74B06B1797A5110031D064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QRadioButtonDemo/QRadioButtonDemo-Prefix.pch";
+				INFOPLIST_FILE = "QRadioButtonDemo/QRadioButtonDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C74B06C1797A5110031D064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QRadioButtonDemo/QRadioButtonDemo-Prefix.pch";
+				INFOPLIST_FILE = "QRadioButtonDemo/QRadioButtonDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C74B0421797A5110031D064 /* Build configuration list for PBXProject "QRadioButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C74B0681797A5110031D064 /* Debug */,
+				2C74B0691797A5110031D064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C74B06A1797A5110031D064 /* Build configuration list for PBXNativeTarget "QRadioButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C74B06B1797A5110031D064 /* Debug */,
+				2C74B06C1797A5110031D064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C74B03F1797A5110031D064 /* Project object */;
+}
