@@ -28,7 +28,6 @@
     [_radio1.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
     [self.view addSubview:_radio1];
     [_radio1 setChecked:YES];
-    [_radio1 release];
     
     QRadioButton *_radio2 = [[QRadioButton alloc] initWithDelegate:self groupId:@"groupId1"];
     _radio2.frame = CGRectMake(20, 70, 80, 40);
@@ -36,7 +35,6 @@
     [_radio2 setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [_radio2.titleLabel setFont:[UIFont boldSystemFontOfSize:13.0f]];
     [self.view addSubview:_radio2];
-    [_radio2 release];
     
     QRadioButton *_radio3 = [[QRadioButton alloc] initWithDelegate:self groupId:@"groupId2"];
     _radio3.frame = CGRectMake(20, 160, 80, 40);
@@ -49,7 +47,6 @@
     [_radio3 setImage:[UIImage imageNamed:@"radio_selected.png"] forState:UIControlStateSelected];
     [self.view addSubview:_radio3];
     [_radio3 setChecked:YES];
-    [_radio3 release];
     
     QRadioButton *_radio4 = [[QRadioButton alloc] initWithDelegate:self groupId:@"groupId2"];
     _radio4.frame = CGRectMake(20, 210, 80, 40);
@@ -62,7 +59,6 @@
     [_radio4 setImage:[UIImage imageNamed:@"radio_selected.png"] forState:UIControlStateSelected];
     [self.view addSubview:_radio4];
     [_radio4 setChecked:NO];
-    [_radio4 release];
 }
 
 #pragma mark - QRadioButtonDelegate

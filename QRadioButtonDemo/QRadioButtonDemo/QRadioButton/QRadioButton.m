@@ -16,10 +16,6 @@ static NSMapTable *_groupRadioDic = nil;
 
 @implementation QRadioButton
 
-@synthesize delegate = _delegate;
-@synthesize checked  = _checked;
-@synthesize userInfo = _userInfo;
-
 - (id)initWithDelegate:(id)delegate groupId:(NSString*)groupId {
     self = [super init];
     if (self) {
