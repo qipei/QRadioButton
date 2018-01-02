@@ -1,9 +1,9 @@
 //
-//  EIRadioButton.m
-//  EInsure
+//  QRadioButton.m
+//  QRadioButton
 //
-//  Created by ivan on 13-7-9.
-//  Copyright (c) 2013年 ivan. All rights reserved.
+//  Created by qipei on 18-1-2.
+//  Copyright (c) 2018年 qipei. All rights reserved.
 //
 
 #import "QRadioButton.h"
@@ -12,18 +12,19 @@
 #define Q_ICON_TITLE_MARGIN                 (5.0)
 
 
-static NSMutableDictionary *_groupRadioDic = nil;
+static NSMapTable *_groupRadioDic = nil;
 
 @implementation QRadioButton
 
 @synthesize delegate = _delegate;
 @synthesize checked  = _checked;
+@synthesize userInfo = _userInfo;
 
 - (id)initWithDelegate:(id)delegate groupId:(NSString*)groupId {
     self = [super init];
     if (self) {
         _delegate = delegate;
-        _groupId = [groupId copy];
+        _groupId = groupId;
         
         [self addToGroup];
         
@@ -37,32 +38,35 @@ static NSMutableDictionary *_groupRadioDic = nil;
 }
 
 - (void)addToGroup {
-    if(!_groupRadioDic){
-        _groupRadioDic = [[NSMutableDictionary dictionary] retain];
+    if(!_groupRadioDic) {
+        _groupRadioDic = [NSMapTable weakToStrongObjectsMapTable];
     }
     
-    NSMutableArray *_gRadios = [_groupRadioDic objectForKey:_groupId];
+    NSHashTable *_gRadios = [_groupRadioDic objectForKey:_groupId];
     if (!_gRadios) {
-        _gRadios = [NSMutableArray array];
+        _gRadios = [NSHashTable weakObjectsHashTable];
     }
     [_gRadios addObject:self];
     [_groupRadioDic setObject:_gRadios forKey:_groupId];
 }
 
+
 - (void)removeFromGroup {
     if (_groupRadioDic) {
-        NSMutableArray *_gRadios = [_groupRadioDic objectForKey:_groupId];
-        if (_gRadios) {
-            [_gRadios removeObject:self];
-            if (_gRadios.count == 0) {
-                [_groupRadioDic removeObjectForKey:_groupId];
-            }
-        }
+        [_groupRadioDic removeObjectForKey:_groupId];
+//        NSMutableArray *_gRadios = [_groupRadioDic objectForKey:_groupId];
+//        if (_gRadios) {
+//            [_gRadios removeObject:self];
+//            if (_gRadios.count == 0) {
+//                [_groupRadioDic removeObjectForKey:_groupId];
+//            }
+//        }
     }
 }
 
+
 - (void)uncheckOtherRadios {
-    NSMutableArray *_gRadios = [_groupRadioDic objectForKey:_groupId];
+    NSHashTable *_gRadios = [_groupRadioDic objectForKey:_groupId];
     if (_gRadios.count > 0) {
         for (QRadioButton *_radio in _gRadios) {
             if (_radio.checked && ![_radio isEqual:self]) {
@@ -120,12 +124,10 @@ static NSMutableDictionary *_groupRadioDic = nil;
 
 
 - (void)dealloc {
-    [self removeFromGroup];
-    
     _delegate = nil;
-    [_groupId release];
     _groupId = nil;
-    [super dealloc];
+    _userInfo = nil;
+    [self removeFromGroup];
 }
 
 
